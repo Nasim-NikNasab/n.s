@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poiret+One&display=swap" rel="stylesheet">
+
+
+  
+    <style>
+.luckiest-guy-regular {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.basic-input{
+    border-width: 5px;
+    height: 20px;
+    background-color: rgb(111, 214, 206);
+    padding-left: 90px; ;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+    border-color:rgb(23, 103, 95) ;
+    padding-top: 5px;
+    margin: 10px;
+    padding-bottom: 5px;
+    border: 5px solid;
+}
+.header{
+    font-size: 30px;
+   
+}
+   
+.s{
+    background-color: rgb(111, 214, 206);
+    font-size: 20px;
+    border-width: 2px;
+    border-color:rgb(23, 103, 95) ;
+    gap: 20px;
+    padding-left: 60px; ;
+    padding-right:80px ;
+    display: flex;
+
+}
+.flex{
+        display: flex;
+        gap: 20px;
+        padding-top: 5px; ;
+        padding-left: 0px; ;
+        padding-right: 0px;
+        padding-bottom: 20px;
+}
+.ch{
+    background-color: rgb(111, 214, 206);
+    border-color:rgb(23, 103, 95) ;
+    padding-left: 80px; ;
+    padding-right:90px ;
+    border-width: 5px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.m
+{
+ margin: 20px; 
+ padding-left: 80px;  
+}
+.button-78 {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: Eina01,sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .button-78 {
+    padding: 19px 32px;
+  }
+}
+
+.button-78:before,
+.button-78:after {
+  border-radius: 80px;
+}
+
+.button-78:before {
+  background-image: linear-gradient(92.83deg, #0eb082 0, #08945e 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.button-78:after {
+  background-color: initial;
+  background-image: linear-gradient(#05493f 0, #0c0d0d 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.button-78:hover:not(:disabled):before {
+  background: linear-gradient(92.83deg, rgba(38, 255, 186, 0.649) 0%, rgb(249, 58, 19) 100%);
+}
+
+.button-78:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
+
+.button-78:active:not(:disabled) {
+  color: #ccc;
+}
+
+.button-78:active:not(:disabled):before {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+}
+
+.button-78:active:not(:disabled):after {
+  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.button-78:disabled {
+  cursor: default;
+  opacity: .24;
+}
+#nm{
+    padding-left:0px !important ;
+    padding-right:0px !important;
+}
+
+    </style>
+
+    <body>
+
+        <header class="header">
+            <div style="color: rgb(2, 114, 118);" class="luckiest-guy-regular"><h1>Welcome!😄</h1></div>
+
+        </header>
+
+        <form method="post"  >
+
+        <main style="border-bottom : 1px solid rgb(0, 136, 118);" > 
+            <div style="display: flex; justify-content: space-around;">
+            
+            <div><input  type="text" name="input_text"class="basic-input" required placeholder="firstname">
+            <br>
+            <input type="text" name="input_text"class="basic-input" required placeholder="lastname"/>
+            <br>
+            <input type="number" name="input_number"class="basic-input" maxlength="10" minlength="10" required placeholder="Nationality"/>
+            <br>
+            <input type="file" name="input_image" class="basic-input"  id="nm" required placeholder="image" />
+            <br>
+            <input type="password" name="input_password"class="basic-input" required placeholder="password"/>
+              <br>
+             <select class="ch">
+                <option selected disabled class="ch">Choose your gender</option>
+                <option class="ch">men</option>
+                <option class="ch">women</option>
+            </select>
+            <br>
+                <button type="submit" class="button-78"  style="margin: 30px ;">Log In</button>
+               </div> 
+
+            <div><img src="cr.jpg" class="flex" width="450px" height="500px"></div>
+
+            </main> 
+           </div>
+                 
+        </form>
+        <footer >
+            <img src="namad.jpg" style="margin-right: 1300px;">
+            <img src="namad1.jpg" > 
+            <div >
+              <center><button class="button-78">About Us</button>
+              <button class="button-78">Help Center</button>
+              <button class="button-78">Email Customer Support</button></center>
+              
+            </div>
+            </footer>
+    </body>
+</head>
+</html>
